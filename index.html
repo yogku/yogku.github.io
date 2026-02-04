@@ -1,19 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5107419722863748"
-     crossorigin="anonymous"></script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5107419722863748" crossorigin="anonymous"></script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-7Q549QGDQQ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-7Q549QGDQQ');
+  </script>
 
-  gtag('config', 'G-7Q549QGDQQ');
-</script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Memory Lane</title>
+  
+  <title>Memory Lane | Share and Preserve Your Personal Memories</title>
+  <meta name="description" content="Memory Lane is a personal space to post and preserve your cherished memories. Connect with your past through text and images.">
+  <meta name="keywords" content="memory lane, personal blog, digital diary, save memories, photo sharing">
+  <link rel="canonical" href="https://yourdomain.com/index.html">
+
+  <meta property="og:title" content="Memory Lane - Your Personal Memory Hub">
+  <meta property="og:description" content="A digital space to capture and revisit your life's best moments.">
+  <meta property="og:image" content="https://yourdomain.com/assects/images/og-preview.png">
+  <meta property="og:url" content="https://yourdomain.com/index.html">
+  <meta property="og:type" content="website">
+
   <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
   <link rel="stylesheet" href="assects/css/header.css"> 
   <link rel="stylesheet" href="assects/css/post.css">
@@ -23,70 +33,31 @@
 
   <div class="header">
     <a href="index.html" class="logo"><h1>MemoryLane</h1></a>
-    <div class="profileIcon" ><img src="assects/images/profile.png"></div> 
-    <div class="post-icon" id="postIcon"><img src="assects/images/post-icon.png"></div>
+    <div class="profileIcon">
+        <img src="assects/images/profile.png" alt="User Profile Navigation">
+    </div> 
+    <div class="post-icon" id="postIcon">
+        <img src="assects/images/post-icon.png" alt="Create New Post">
+    </div>
   </div>
 
- 
   <div class="side-nav">
     <ul>
-        <li><a href="index.html"><img src="assects/images/home.png"></a>      <a href="index.html">  <p><b>Home  </b></p> </a></li>
-        <li><a href="aboutus.html"><img src="assects/images/aboutus.png"></a>   <a href="aboutus.html">  <p><b>About us  </b></p> </a></li>
-        <li><a href="feedback.html"><img src="assects/images/feedback.png"></a>  <a href="feedback.html">  <p><b>Feedback  </b></p> </a></li>
-
+        <li><a href="index.html"><img src="assects/images/home.png" alt="Home Page"></a>      <a href="index.html">  <p><b>Home  </b></p> </a></li>
+        <li><a href="aboutus.html"><img src="assects/images/aboutus.png" alt="About Memory Lane"></a>   <a href="aboutus.html">  <p><b>About us  </b></p> </a></li>
+        <li><a href="feedback.html"><img src="assects/images/feedback.png" alt="Provide Feedback"></a>  <a href="feedback.html">  <p><b>Feedback  </b></p> </a></li>
     </ul>
     <ul>
-        <li><img src="assects/images/Language.png"> <p><b>Language</b></p></li>
+        <li><img src="assects/images/Language.png" alt="Change Language Settings"> <p><b>Language</b></p></li>
     </ul>
   </div>
 
-  <div class="post-nav">
-    <ul>
-      <li><a href="post-text.html"><img src="assects/images/post-text.png"></a>  <a href="post-text.html"> <p><b>Post  </b></p></a></li>
-      <li><a href="post-image.html"><img src="assects/images/post-image.png"></a> <a href="post-image.html"><p><b>Image </b></p></a></li> 
-  </ul>
-  </div>
-  
-  <div class="profile-nav" id="profileNav">
-    <ul>
-      <li><img src="assects/images/profile.png"><p><b>User</b></p></li>       
-  </ul>
-
-    <div class="input-group">
-      <input name="new-username" id="input-username" placeholder="Set New Username">
-      <button class="set-new-username">Set</button>  
+  <div class="c-container">
+    <h2 style="display:none;">Latest Memories</h2> <div id="posts-container">
+      <div class="postdata">
+          </div>
     </div>
   </div>
-
-<div class="c-container">
- <!-- <b> Home Page </b> <br><br> <hr> -->
-  <div id="posts-container">
-    <div class ="postdata">
-
-        <!-- Data is loading from database  -->
-
-    </div>
-  </div>
-<!-- 
-  <script>
-    // fetch and display data
-    $(document).ready(function() {
-      $.ajax({
-        url: 'assects/php/post-data.php',
-        type: 'GET',
-        dataType: 'html',
-        success: function(response) {
-          $('#posts-container').html(response);
-        },
-        error: function(jqXHR, textStatus, errorThrown) {
-          console.error("Error fetching data:", textStatus, errorThrown);
-          $('#posts-container').html('<p>Error fetching data. Please try again later.</p>');
-        }
-      });
-    });
-  </script> -->
-  
-</div>
 
 <script src="assects/js/header.js"></script>
 </body>
